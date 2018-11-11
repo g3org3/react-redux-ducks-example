@@ -1,5 +1,5 @@
 {
-  "name": "new",
+  "name": "middleware",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -9,7 +9,8 @@
     "react-dom": "16.5.2",
     "react-redux": "5.1.1",
     "react-scripts": "2.0.3",
-    "redux": "4.0.1"
+    "redux": "4.0.1",
+    "redux-logger": "3.0.6"
   },
   "devDependencies": {},
   "scripts": {

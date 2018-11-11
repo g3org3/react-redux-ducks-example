@@ -4,7 +4,7 @@ import { addCounter, subCounter } from '../ducks';
 
 const Home = ({ counter, addCounter, subCounter }) => (
   <div>
-    <h1>Ducks Example</h1>
+    <h1>Ducks Middleware Example</h1>
     <div>
       <b>counter:</b> {counter}
       <button onClick={addCounter}>+1</button>

@@ -1,1 +1,1 @@
-# react-redux-ducks-example
+# ducks middleware example
