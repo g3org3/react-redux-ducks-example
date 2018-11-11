@@ -1,10 +1,11 @@
 import { createStore, compose, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
+import throttle from 'redux-throttle';
 
 import reducers from './ducks';
 import api from './middleware/api';
 
-const middleware = [api];
+const middleware = [api, throttle()];
 
 let composeEnhancers = compose;
 
