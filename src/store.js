@@ -1,8 +1,10 @@
 import { createStore, compose, applyMiddleware } from 'redux';
-import reducers from './ducks';
 import logger from 'redux-logger';
 
-const middleware = [];
+import reducers from './ducks';
+import api from './middleware/api';
+
+const middleware = [api];
 
 let composeEnhancers = compose;
 
