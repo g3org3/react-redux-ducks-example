@@ -1,7 +1,19 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { addCounter, subCounter } from '../ducks';
 
-export default () => (
+const Home = ({ counter, addCounter, subCounter }) => (
   <div>
-    <h1>hello</h1>
+    <h1>Ducks Example</h1>
+    <div>
+      <b>counter:</b> {counter}
+      <button onClick={addCounter}>+1</button>
+      <button onClick={subCounter}>-1</button>
+    </div>
   </div>
 );
+
+export default connect(
+  ({ counter }) => ({ counter }),
+  { addCounter, subCounter }
+)(Home);
