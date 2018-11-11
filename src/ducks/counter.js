@@ -21,6 +21,12 @@ export default (state = initialState, action) => {
 export const addCounter = () => ({
   type: COUNTER_ADD,
   payload: 1,
+  meta: {
+    throttle: {
+      wait: 500,
+      trailing: false,
+    },
+  },
 });
 
 export const subCounter = () => ({
